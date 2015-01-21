@@ -30,6 +30,7 @@ fBodyGyroJerkMag
 
 ##Modifications to the original dataset
 (resulting in the tidi dataset `tidy-summary.txt`)
+
 From the .mean and .std colums of the original dataset that were estimated from the above signals these new columns were calculated:
 
 XXX.mean...: mean of the Mean values for signal XXX  
