@@ -1,4 +1,4 @@
-setwd("/media/Home+Work/lernen/Data Science/Getting and Cleaning Data/Getting and Cleaning Data Course Project/UCI HAR Dataset")
+setwd("UCI HAR Dataset")
 
 # read descriptions
 features<-read.table("features.txt")
@@ -31,4 +31,5 @@ colnames(df) <- c("subject", "activity", make.names(features$V2[columns.sel]))
 df.tidy<-aggregate(x=df[,3:81], by=list(df$subject, df$activity), FUN=mean)
 colnames(df.tidy)[1]="subject"
 colnames(df.tidy)[2]="activity"
-write.table(df.tidy, file = "tidy-summary.txt", row.name=FALSE)
+write.table(df.tidy, file = "../tidy-summary.txt", row.name=FALSE)
+
