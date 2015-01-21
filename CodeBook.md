@@ -28,14 +28,18 @@ fBodyAccJerkMag
 fBodyGyroMag  
 fBodyGyroJerkMag 
 
-##Modifications to the original dataset resulting in the tidi dataset `tidy-summary.txt`
+##Modifications to the original dataset
+(resulting in the tidi dataset `tidy-summary.txt`)
 From the .mean and .std colums of the original dataset that were estimated from the above these signals these new columns were calculated:
 
-.mean...: mean of the Mean values  
-.std...: mean of Standard deviations
+<X>.mean...: mean of the Mean values for <X>  
+             (e.g. tBodyAcc.mean...X where `tBodyAcc` is the signal `X` is the axis)
+  
+<X>.std...: mean of Standard deviations for <X>
 
 For a description of the processing please consult `Readme.md` and read the comments in `run_analysis.R`.
-Complete list:
+
+#Complete list:
 
 tBodyAcc.mean...X  
 tBodyAcc.mean...Y  
