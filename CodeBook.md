@@ -1,3 +1,16 @@
+Dataset in `tidy-summary.txt`
+=============================
+
+From the .mean and .std colums of the original dataset, that were estimated from the signals below, the average of each variable for each activity and each subject are contained in
+
+XXX.mean...: mean of the Mean values for signal XXX  
+XXX.std...:  mean of Standard deviations for signal XXX
+
+For a description of the processing please consult `Readme.md` and read the comments in `run_analysis.R`.
+
+*As all values were already normalized in the original dataset all values have no units.*
+
+
 Feature Selection (from the original dataset)
 =============================================
 
@@ -28,21 +41,12 @@ fBodyAccJerkMag
 fBodyGyroMag  
 fBodyGyroJerkMag 
 
-##Modifications to the original dataset
-(resulting in the tidi dataset `tidy-summary.txt`)
 
-From the .mean and .std colums of the original dataset that were estimated from the above signals these new columns were calculated:
+Complete list of all values in `tidy-summary.txt`
+===================================================
 
-XXX.mean...: mean of the Mean values for signal XXX  
-XXX.std...:  mean of Standard deviations for signal XXX
-
-For a description of the processing please consult `Readme.md` and read the comments in `run_analysis.R`.
-
-*As all values were already normalized in the original dataset all values have no units.*
-
-
-###Complete list:
-
+subject
+activity
 tBodyAcc.mean...X  
 tBodyAcc.mean...Y  
 tBodyAcc.mean...Z  
